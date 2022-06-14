@@ -1,0 +1,81 @@
+*{
+    font-family: 'Fraunces', 'serif';
+    color: #fff;
+
+}
+
+body{
+    margin: 0;
+    background-color: #dc7d68;
+
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0px 5px #916cad;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #916cad;
+    box-shadow: 5px 5px 10px -3px #00000010, -5px -5px 15px 3px #00ffc11f;
+}
+
+button:active {
+    background-color: #c7fba5;
+
+}
+
+button:focus{
+    outline: none;
+}
+
+.col-2{
+    grid-column: span 2;
+
+}
+
+.display{
+    grid-column: 1 / -1; /*Estos valores permiten tener el ancho de todo su div que le contiene, bastante util para no tener que adivinar los tamaños y es más responsivo*/
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #adf182;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #00000020;
+}
+
+#valor_actual{
+
+    font-size: 1.5em;
+
+}
+
+#valor_anterior{
+    font-size: 2em;
+}
